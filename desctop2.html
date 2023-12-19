@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>desctop2</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="burger__fav-block">
+    <div class="burger__fav-btn">
+      <span></span>
+      <span></span>
+    </div>
+    <h2 class="favorite__title">Favourite</h2>
+  </div>
+    <section class="section__content">
+        <div class="container">
+          <h2 class="title">MSI 2020</h2>
+          <h1 class="greeting">Hey!</h1>
+          <h2 class="form__title">Let’s try to find a joke for you:</h2>
+          <form id="jokeForm" class="form">
+            <label>
+              <input class="input__categories" type="radio" name="jokeFormType" value="random" checked>
+              Random
+            </label>
+            <label>
+              <input class="input__categories" type="radio" name="jokeFormType" value="categories">
+              From caterogies
+              <ul id="jokeFormCats" class="joke__cats"></ul>
+            </label>
+
+            
+            <form>
+              <input type="text" name="jokeFormType" id="jokeFormSearch" value="Free text search..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+              <input type="radio" name="jokeFormType" id="radio" value="search" hidden>
+              <button class="button">Get a joke</button>
+            </form>
+            
+          </form>
+          <div id="jokesContainer"></div>
+      </div>
+    </div>
+    
+    <div id="jokesContainerFavotite" class="section__favorite">
+      <div class="joke__content-block">
+    
+    
+      
+        <h2 class="favorite__title">Favourite</h2>
+      </div>
+    </div>
+    </section>
+
+    <script src="/js/main.js" type="module"></script>
+  </body>
+</html>

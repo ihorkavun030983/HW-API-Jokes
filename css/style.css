@@ -1,0 +1,275 @@
+html,
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+
+.section__content {
+  display: flex;
+}
+
+.container {
+  flex: 1 1;
+  margin: 50px 140px 140px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.greeting {
+  margin-top: 78px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+}
+.form {
+  margin-top: 40px;
+}
+.form__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 44px;
+}
+label {
+  display: block;
+}
+.input__categories {
+  margin-bottom: 10px;
+}
+.joke__cats {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+  overflow-x: auto;
+  max-width: 400px;
+}
+
+.joke__cats::-webkit-scrollbar {
+  width: 0;
+}
+
+.joke__cat {
+  display: none;
+}
+
+.category__link {
+  border-radius: 6px;
+  border: 2px solid #f8f8f8;
+  text-transform: uppercase;
+  padding: 6px 15px;
+  color: #333;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+.category__link:hover{
+  background: #F8F8F8;
+}
+
+.button {
+  padding: 10px 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(91deg, #8ea7ff 0%, #7291ff 100%);
+}
+.joke__content {
+  position: relative;
+  margin-top: 40px;
+  border-radius: 20px;
+  background: #f8f8f8;
+  padding: 30px 40px 40px 100px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+}
+.link__id {
+  color: #8ea7ff;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.joke__text {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.typografy {
+  color: #ababab;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  padding-top: 20px;
+}
+.massage {
+  position: absolute;
+  top: 67px;
+  left: 40px;
+  border: none;
+  background: none;
+}
+.favorite__btn {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.favorite__btn {
+  border: none;
+  background: none;
+}
+
+.category {
+  padding: 6px 20px;
+  border-radius: 6px;
+  background: #fff;
+  float: right;
+}
+.category__text {
+  color: #333;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section__favorite {
+  flex: 1 1;
+  background: #f8f8f8;
+  max-width: 480px;
+  min-height: 100vh;
+}
+
+
+.favorite__title {
+  color: #ababab;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 20px 40px;
+}
+
+#jokeFormSearch {
+  display: block;
+  width: 100%;
+  height: 42px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  margin: 10px 0 20px 0;
+  color: #ababab;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+#jokesContainerFavotite .joke__content {
+  background-color: #fff;
+  margin: 0 40px 20px;
+}
+#jokesContainerFavotite .category {
+  display: none;
+}
+
+.burger__fav-block{
+  position: absolute;
+  top: 40px;
+  right: 0;
+  display: none;
+  z-index: 2;
+}
+.burger__fav-btn{
+  width: 28px;
+  height: 28px;
+  background: #333333;
+  border-radius: 50%;
+  position: absolute;
+  left: 7px;
+  right: 0;
+}
+
+.burger__fav-btn span{
+width: 20px;
+height: 2px;
+background-color: #fff;
+position: absolute;
+  top: 10px;
+  left: 5px;
+}
+.burger__fav-btn span:first-child{
+  width: 20px;
+  height: 2px;
+  background-color: #F8F8F8;
+  position: absolute;
+  top: 16px;
+  left: 5px;
+}
+
+@media screen and (max-width: 834px){
+	.section__favorite{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.section__favorite.active {
+  right: 0px;
+  width: 100%;
+  /* color: #fff; */
+}
+
+.section__favorite.active .favorite__title{
+  display: none;
+}
+
+
+.burger__fav-btn.active span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.burger__fav-btn.active span:first-child {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.burger__fav-btn{
+  z-index: 2;
+}
+
+/* .burger__fav-block .favorite__title{
+color: red;
+} */
+.container{
+  margin: 40px;
+}
+.burger__fav-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joke__content-block{
+  margin-top: 110px;
+}
+}
+@media screen and (max-width: 520px){
+  .section__content{
+    display: block;
+  }
+}
